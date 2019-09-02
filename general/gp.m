@@ -1,4 +1,5 @@
 function gp(x0)
+%灰色预测
     n=length(x0);
     lamda=x0(1:n-1)./x0(2:n);
     range=minmax(lamda);%同时求出最小值和最大值,用于判断是否能用灰度预测模型
